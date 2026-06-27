@@ -1,0 +1,8 @@
+{
+"name":"LexOne",
+"short_name":"LexOne",
+"display":"standalone",
+"background_color":"#07090D",
+"theme_color":"#07090D",
+"start_url":"/"
+}

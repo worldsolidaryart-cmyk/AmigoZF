@@ -1,0 +1,45 @@
+:root{
+
+/* Background */
+
+--bg:#07090D;
+
+--bg-secondary:#10151E;
+
+--surface:#171E29;
+
+/* Brand */
+
+--gold:#C9A54D;
+
+--gold-light:#E4C77A;
+
+/* Text */
+
+--white:#F8FAFC;
+
+--gray:#AAB3C0;
+
+--gray-dark:#667085;
+
+/* Borders */
+
+--border:rgba(255,255,255,.08);
+
+/* Shadow */
+
+--shadow:0 20px 60px rgba(0,0,0,.35);
+
+/* Radius */
+
+--radius:18px;
+
+/* Transition */
+
+--transition:.35s;
+
+/* Max Width */
+
+--container:1280px;
+
+}
