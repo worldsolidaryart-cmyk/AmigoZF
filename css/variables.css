@@ -1,45 +1,41 @@
 :root{
 
-/* Background */
+    /* Cores */
 
---bg:#07090D;
+    --bg:#05070B;
+    --bg-secondary:#0B1018;
+    --card:#111827;
 
---bg-secondary:#10151E;
+    --gold:#C9A54D;
+    --gold-light:#DFC06F;
 
---surface:#171E29;
+    --white:#F8FAFC;
 
-/* Brand */
+    --gray:#98A2B3;
+    --gray-dark:#6B7280;
 
---gold:#C9A54D;
+    /* Sombras */
 
---gold-light:#E4C77A;
+    --shadow:0 20px 60px rgba(0,0,0,.45);
 
-/* Text */
+    /* Bordas */
 
---white:#F8FAFC;
+    --border:rgba(255,255,255,.08);
 
---gray:#AAB3C0;
+    /* Gradientes */
 
---gray-dark:#667085;
+    --gradient:linear-gradient(
+        135deg,
+        #C9A54D 0%,
+        #DFC06F 100%
+    );
 
-/* Borders */
+    /* Radius */
 
---border:rgba(255,255,255,.08);
+    --radius:18px;
 
-/* Shadow */
+    /* Container */
 
---shadow:0 20px 60px rgba(0,0,0,.35);
-
-/* Radius */
-
---radius:18px;
-
-/* Transition */
-
---transition:.35s;
-
-/* Max Width */
-
---container:1280px;
+    --container:1280px;
 
 }
