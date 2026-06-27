@@ -1,0 +1,144 @@
+/* ==========================================================================
+   CONFIGURAÇÃO RESPONSIVA PARA DISPOSITIVOS MÓVEIS (Telas até 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    /* --- Estrutura Geral --- */
+    .container {
+        padding: 0 20px; /* Evita que o conteúdo cole nas bordas da tela */
+    }
+
+    /* --- Cabeçalho & Menu --- */
+    .header .container {
+        flex-direction: column; /* Coloca Logo, Menu e Botão um abaixo do outro */
+        gap: 15px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .header .menu {
+        flex-wrap: wrap; /* Permite que os links quebrem linha se faltar espaço */
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    .header .btn-menu {
+        width: 100%; /* Botão principal ocupa a largura total no mobile */
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* --- Seção Hero (Introdução) --- */
+    #hero {
+        padding: 40px 0;
+    }
+
+    .hero-grid {
+        display: flex;
+        flex-direction: column-reverse; /* Foto fica no topo e os textos embaixo */
+        gap: 35px;
+    }
+
+    .hero-left {
+        text-align: center; /* Centraliza textos e botões no celular */
+    }
+
+    .hero-tag {
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+
+    #hero h1 {
+        font-size: 28px; /* Reduz o título principal para não quebrar feio */
+        line-height: 1.3;
+    }
+
+    #hero p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    /* Botões da Abertura */
+    .hero-buttons {
+        flex-direction: column; /* Empilha os botões */
+        gap: 12px;
+        width: 100%;
+    }
+
+    .hero-buttons a {
+        width: 100%; /* Botões ocupam toda a largura */
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Números de Destaque (Plantão, Atendimento, Áreas) */
+    .hero-numbers {
+        grid-template-columns: 1fr; /* Coloca um indicador por linha */
+        gap: 20px;
+        margin-top: 35px;
+        background: rgba(255, 255, 255, 0.05); /* Suave contraste de fundo */
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    /* --- Foto do Advogado --- */
+    .hero-right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .photo-card {
+        max-width: 280px; /* Limita o tamanho da foto em telas menores */
+        margin: 0 auto;
+    }
+
+    .lawyer-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    /* --- Caixa Modal (Escritório) --- */
+    .modal {
+        width: 90% !important;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .modal-content {
+        padding: 10px;
+    }
+
+    .modal-info-grid {
+        grid-template-columns: 1fr !important; /* Dados de endereço passam de lado a lado para empilhados */
+        gap: 15px;
+    }
+
+    /* --- Ícone Flutuante do WhatsApp --- */
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Esconde a legenda flutuante por padrão em celulares para não cobrir o site */
+    .whatsapp-tooltip {
+        display: none !important; 
+    }
+}
+
+/* Adaptação das novas seções para Mobile */
+    .section-padding {
+        padding: 60px 0;
+    }
+    .about-grid, .practice-grid, .articles-grid, .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+    .section-header h2, h2 {
+        font-size: 30px !important;
+    }
+    .contact-form {
+        padding: 25px 20px;
+    }

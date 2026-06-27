@@ -27,3 +27,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const modalAgenda = document.getElementById("modal-agendamento");
+    const botoesAbrir = document.querySelectorAll(".classe-abrir-agenda");
+    const botaoFechar = document.getElementById("btn-fechar-agendamento");
+
+    // Abre o modal ao clicar em qualquer um dos dois botões de agendamento
+    botoesAbrir.forEach(botao => {
+        botao.addEventListener("click", () => {
+            modalAgenda.showModal();
+        });
+    });
+
+    // Fecha o modal ao clicar no 'X'
+    botaoFechar.addEventListener("click", () => {
+        modalAgenda.close();
+    });
+
+    // Fecha o modal se o usuário clicar na área escura de fundo
+    modalAgenda.addEventListener("click", (e) => {
+        if (e.target === modalAgenda) {
+            modalAgenda.close();
+        }
+    });
+});

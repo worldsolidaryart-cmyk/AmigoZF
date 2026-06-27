@@ -53,7 +53,7 @@
 
             </nav>
 
-            <a href="#" class="btn-menu">
+            <a href="javascript:void(0)" class="btn-menu classe-abrir-agenda">
 
                 Agendar Atendimento
 
@@ -94,7 +94,7 @@
 
                     <div class="hero-buttons">
 
-                        <a href="#" class="btn-primary">
+                        <a href="javascript:void(0)" class="btn-primary classe-abrir-agenda">
 
                             Agendar Atendimento
 
@@ -156,6 +156,138 @@
 
         </section>
 
+        <!-- SEÇÃO SOBRE -->
+        <section id="about" class="section-padding">
+            <div class="container about-grid">
+                <div class="about-left">
+                    <span class="hero-tag">TRAJETÓRIA</span>
+                    <h2>Excelência Jurídica e Comprometimento.</h2>
+                    <p>O escritório <strong>Amigo Z. F. Advocacia Estratégica</strong> foi fundado com o objetivo de quebrar a rigidez do direito tradicional, trazendo uma abordagem dinâmica, próxima e altamente focada em resultados rápidos e seguros.</p>
+                    <p>Aliando sólida formação técnica com o uso de tecnologias de ponta, garantimos que cada cliente receba uma blindagem jurídica exclusiva, seja em caráter preventivo ou em litígios complexos.</p>
+                </div>
+                <div class="about-right">
+                    <div class="about-experience-card">
+                        <div class="photo-glow"></div>
+                        <h3>Atuação Estratégica</h3>
+                        <p>Nossa prioridade é antecipar cenários de risco e construir teses defensivas sólidas, focando sempre na paz de espírito e na liberdade dos nossos representados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO ATUAÇÃO -->
+        <section id="practice" class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="hero-tag">ESPECIALIDADES</span>
+                    <h2>Áreas de Atuação Pragmática</h2>
+                </div>
+                
+                <div class="practice-grid">
+                    <!-- Card 1 -->
+                    <div class="practice-card">
+                        <div class="practice-icon">⚖️</div>
+                        <h3>Direito Criminal</h3>
+                        <p>Plantão 24h para flagrantes, audiências de custódia, defesas prévias, habeas corpus e acompanhamento em inquéritos policiais.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="practice-card">
+                        <div class="practice-icon">💼</div>
+                        <h3>Direito Trabalhista</h3>
+                        <p>Defesa dos direitos do trabalhador e consultoria preventiva corporativa para evitar passivos trabalhistas severos.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="practice-card">
+                        <div class="practice-icon">🏠</div>
+                        <h3>Direito de Família</h3>
+                        <p>Resolução humanizada e estratégica de divórcios, partilhas de bens, pensão alimentícia, guarda e inventários.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PUBLICAÇÕES -->
+        <section id="articles" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="hero-tag">CONHECIMENTO JURÍDICO</span>
+                    <h2>Publicações & Artigos Recentes</h2>
+                </div>
+
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <span class="article-date">Junho, 2026</span>
+                        <h3>Audiência de Custódia: Seus direitos fundamentais nas primeiras 24 horas</h3>
+                        <p>Entenda como funciona o procedimento crucial após uma prisão e a importância de uma defesa técnica imediata.</p>
+                        <a href="#" class="article-link">Ler artigo completo →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <span class="article-date">Maio, 2026</span>
+                        <h3>Direitos do Trabalhador no regime Home Office: O que mudou na lei?</h3>
+                        <p>Mapeamos os principais pontos sobre controle de jornada, reembolso de despesas e segurança ocupacional.</p>
+                        <a href="#" class="article-link">Ler artigo completo →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section id="contact" class="section-padding bg-alt">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <span class="hero-tag">FALE CONOSCO</span>
+                    <h2>Inicie sua Defesa Agora Mesmo</h2>
+                    <p>Seja para uma consulta de rotina ou uma urgência jurídica, estamos prontos para te atender.</p>
+                    
+                    <div class="contact-channels">
+                        <div class="channel-item">
+                            <strong>📍 Endereço:</strong>
+                            <p>Av. Principal, 1230 - Ed. Corporate, Sala 501, Centro - Vila Velha/ES</p>
+                        </div>
+                        <div class="channel-item">
+                            <strong>📞 Telefone Urgências:</strong>
+                            <p>(27) 99999-8888 (Plantão 24h)</p>
+                        </div>
+                        <div class="channel-item">
+                            <strong>✉️ E-mail:</strong>
+                            <p>contato@amigozf.adv.br</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <!-- ATUALIZADO: Adicionado o link do FormSubmit com o seu e-mail e removido o preventDefault -->
+                    <form class="contact-form" action="https://formsubmit.co/seu-email@dominio.com" method="POST">
+                        
+                        <!-- Configurações para evitar SPAM e redirecionar de volta para o site -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://worldsolidaryart-cmyk.github.io/AmigoZF/">
+                        
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <!-- ATUALIZADO: Adicionado name="Nome" -->
+                            <input type="text" id="name" name="Nome" required placeholder="Digite seu nome">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">WhatsApp</label>
+                            <!-- ATUALIZADO: Adicionado name="WhatsApp" -->
+                            <input type="tel" id="phone" name="WhatsApp" required placeholder="(00) 00000-0000">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Breve resumo do seu caso</label>
+                            <!-- ATUALIZADO: Adicionado name="Mensagem" -->
+                            <textarea id="message" name="Mensagem" rows="4" placeholder="Como podemos te ajudar?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>        
+
     </main>
 
     <dialog id="modal-escritorio" class="modal">
@@ -192,6 +324,58 @@
             </div>
         </div>
     </dialog>
+
+    <dialog id="modal-agendamento" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="btn-fechar-agendamento">&times;</button>
+            
+            <h2 class="modal-title" style="text-align: center; margin-bottom: 10px;">Agendar Atendimento</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 25px; font-size: 14px;">
+                Preencha os dados abaixo para direcionarmos seu caso ao especialista responsável.
+            </p>
+            
+            <form id="form-triagem" action="https://formsubmit.co/seu-email@dominio.com" method="POST" class="contact-form" style="background: transparent; border: none; padding: 0;">
+                <!-- Configurações Secretas do FormSubmit (Evita Spam e Redireciona de volta) -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://worldsolidaryart-cmyk.github.io/AmigoZF/">
+                
+                <div class="form-group">
+                    <label for="agenda-name">Nome Completo</label>
+                    <input type="text" id="agenda-name" name="Nome" required placeholder="Digite seu nome">
+                </div>
+                
+                <div class="form-group">
+                    <label for="agenda-phone">WhatsApp</label>
+                    <input type="tel" id="agenda-phone" name="WhatsApp" required placeholder="(00) 00000-0000">
+                </div>
+                
+                <div class="form-group">
+                    <label style="margin-bottom: 12px;">Tipo de Causa (Selecione quantas precisar)</label>
+                    <div class="checkbox-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px;">
+                        <label class="checkbox-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                            <input type="checkbox" name="Causa_Civel" value="Sim" style="width: auto;"> Cível
+                        </label>
+                        <label class="checkbox-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                            <input type="checkbox" name="Causa_Criminal" value="Sim" style="width: auto;"> Criminal
+                        </label>
+                        <label class="checkbox-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                            <input type="checkbox" name="Causa_Familia" value="Sim" style="width: auto;"> Família
+                        </label>
+                        <label class="checkbox-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                            <input type="checkbox" name="Causa_Trabalhista" value="Sim" style="width: auto;"> Trabalhista
+                        </label>
+                        <label class="checkbox-label" style="display: flex; align-items: center; gap: 8px; cursor: pointer; grid-column: span 2;">
+                            <input type="checkbox" name="Causa_Outros" value="Sim" style="width: auto;"> Outros
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; margin-top: 15px;">
+                    Enviar e Solicitar Agendamento
+                </button>
+            </form>
+        </div>
+    </dialog>    
 
     <a href="#" id="btn-whatsapp" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 32 32" class="whatsapp-icon">

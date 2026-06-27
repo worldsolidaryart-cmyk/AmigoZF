@@ -780,3 +780,180 @@ body::before{
         display: none; /* Esconde o balão no celular para não obstruir a tela */
     }
 }
+
+/* ==========================================================================
+   ESTILIZAÇÃO ADICIONAL - SEÇÕES DO SITE (AMIGO Z.F.)
+   ========================================================================== */
+
+/* Regras Globais de Seção */
+.section-padding {
+    padding: 100px 0;
+}
+.bg-alt {
+    background-color: rgba(255, 255, 255, 0.02); /* Tom escuro sutil se o fundo padrão for dark, ou cinza claro se for light */
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-header h2 {
+    font-size: 36px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 10px;
+}
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    color: var(--text-color, #ffffff);
+}
+
+/* --- Estilos Sobre (About) --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.about-left p {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-secondary, #b3b3b3);
+}
+.about-experience-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.about-experience-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* --- Estilos Atuação (Practice) --- */
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.practice-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 35px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.practice-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.practice-icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.practice-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+.practice-card p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-secondary, #b3b3b3);
+}
+
+/* --- Estilos Publicações (Articles) --- */
+.articles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.article-card {
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid #bba15c; /* Tom dourado elegante comum em advocacia */
+    padding: 30px;
+    border-radius: 0 12px 12px 0;
+}
+.article-date {
+    font-size: 13px;
+    color: #bba15c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.article-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+.article-card p {
+    font-size: 15px;
+    color: var(--text-secondary, #b3b3b3);
+    margin-bottom: 20px;
+}
+.article-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: opacity 0.2s;
+}
+.article-link:hover {
+    opacity: 0.8;
+}
+
+/* --- Estilos Contato (Contact) --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+.contact-channels {
+    margin-top: 30px;
+}
+.channel-item {
+    margin-bottom: 25px;
+}
+.channel-item strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.channel-item p {
+    color: var(--text-secondary, #b3b3b3);
+}
+.contact-form {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 16px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #bba15c;
+}
