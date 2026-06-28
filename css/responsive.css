@@ -12,7 +12,7 @@
     .container {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0 20px !important; 
+        padding: 0 15px !important; /* Ligeiro ajuste de padding lateral para economizar espaço */
         box-sizing: border-box !important;
     }
 
@@ -23,68 +23,107 @@
         overflow-wrap: break-word !important;
     }
 
-    /* --- Cabeçalho & Menu --- */
+    /* ==========================================================================
+       AJUSTES ESPECÍFICOS DE ESPAÇAMENTO SOLICITADOS (RESOLUÇÃO DO PRINT)
+       ========================================================================== */
+
+    /* --- 1. Cabeçalho & Menu (Remoção de espaço superior) --- */
     .header {
-        padding: 15px 0 !important;
+        /* Redução drástica do padding vertical para remover o espaço acima do menu */
+        padding: 5px 0 !important; 
     }
 
     .header .container {
         display: flex !important;
         flex-direction: column !important; 
-        gap: 15px !important;
+        gap: 5px !important; /* Reduz o gap entre logo e menu */
         text-align: center !important;
         align-items: center !important;
+    }
+
+    /* Remove qualquer margem da logo que possa estar empurrando o menu para baixo */
+    .header .logo { 
+        margin: 0 !important;
+        display: block !important;
     }
 
     .header .menu {
         display: flex !important;
         flex-wrap: wrap !important; 
         justify-content: center !important;
-        gap: 12px 15px !important;
+        gap: 8px 12px !important; /* Reduz o gap entre os links do menu */
         padding: 0 !important;
+        margin: 0 !important; /* Garante que não haja margens */
     }
 
+    /* Oculta botão agendar conforme solicitado anteriormente */
     .header .btn-menu {
         visibility: hidden !important;
-        /*codigo abaixo é para aparecer o Agendar
-        width: 100% !important; 
-        max-width: 320px !important;
-        text-align: center !important;
-        box-sizing: border-box !important;*/
+        display: none !important; /* Garante que não ocupe espaço */
     }
 
-    /* --- Seção Hero (Introdução) --- */
+
+    /* --- 2. Seção Hero e Foto (Remoção de espaço abaixo da foto) --- */
     #hero {
-        padding: 40px 0 !important;
+        /* Reduz drásticamente o padding superior para começar a foto logo abaixo do menu */
+        padding: 10px 0 20px 0 !important; 
     }
 
     .hero-grid {
         display: flex !important;
-        flex-direction: column-reverse !important; /* Foto no topo, textos embaixo */
-        gap: 40px !important;
+        flex-direction: column-reverse !important; /* Mantém Foto no topo, textos embaixo */
+        gap: 15px !important; /* Reduz drásticamente o gap entre a foto e o texto abaixo */
     }
 
+    /* Bloco da Foto (Agrupa os itens da foto) */
+    .hero-right {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .photo-card {
+        width: 100% !important;
+        max-width: 290px !important; /* Preserva o tamanho da foto */
+        margin: 0 auto !important;
+        position: relative !important;
+    }
+
+    .lawyer-photo {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        border-radius: 24px !important; /* Preserva o corte elegante */
+        margin: 0 !important;
+    }
+
+    /* Bloco de Texto (Textos e botões agora mais próximos da foto) */
     .hero-left {
         text-align: center !important; 
         width: 100% !important;
+        margin: 0 !important;
     }
 
     .hero-tag {
         display: inline-block !important;
-        margin: 0 auto 15px auto !important;
+        /* Redução drástica da margem superior para colar na foto */
+        margin: 5px auto 10px auto !important; 
         white-space: nowrap !important;
     }
 
     #hero h1 {
-        font-size: 26px !important; /* Tamanho ideal reduzido para telas de celular */
-        line-height: 1.3 !important;
-        margin-top: 15px !important;
+        font-size: 24px !important; /* Ligeiro ajuste de tamanho */
+        line-height: 1.2 !important; /* Linha mais compacta */
+        margin-top: 5px !important; /* Margem superior reduzida */
         width: 100% !important;
     }
 
     #hero p {
         font-size: 15px !important;
-        margin-bottom: 25px !important;
+        margin-bottom: 15px !important; /* Margem inferior reduzida */
         padding: 0 5px !important;
     }
 
@@ -92,9 +131,10 @@
     .hero-buttons {
         display: flex !important;
         flex-direction: column !important; 
-        gap: 12px !important;
+        gap: 10px !important; /* Reduz o espaço entre os botões */
         width: 100% !important;
         align-items: center !important;
+        margin-bottom: 20px !important;
     }
 
     .hero-buttons a {
@@ -104,59 +144,42 @@
         box-sizing: border-box !important;
     }
 
-    /* Grid de Números Técnicos */
+    /* Grid de Números Técnicos (Mais compacto) */
     .hero-numbers {
         display: grid !important;
-        grid-template-columns: 1fr !important; /* Um embaixo do outro */
-        gap: 15px !important;
-        margin-top: 35px !important;
+        grid-template-columns: 1fr !important; /* Mantém um embaixo do outro */
+        gap: 10px !important; /* Gap reduzido */
+        margin-top: 20px !important; /* Margem superior reduzida */
         background: rgba(255, 255, 255, 0.03) !important; 
-        padding: 20px !important;
+        padding: 15px !important; /* Padding reduzido */
         border-radius: 12px !important;
     }
 
-    /* --- Foto do Escritório/Advogado --- */
-    .hero-right {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        width: 100% !important;
-    }
+    /* ==========================================================================
+       FIM DOS AJUSTES DE ESPAÇAMENTO ESPECÍFICOS
+       ========================================================================== */
 
-    .photo-card {
-        width: 100% !important;
-        max-width: 290px !important; /* Ajuste preciso com base na imagem do print */
-        margin: 0 auto !important;
-        position: relative !important;
-    }
 
-    .lawyer-photo {
-        width: 100% !important;
-        height: auto !important;
-        display: block !important;
-        border-radius: 24px !important; /* Preserva o corte arredondado elegante */
-    }
-
-    /* --- Novas Seções Adaptadas (AGORA DENTRO DO ESCOPO MOBILE) --- */
+    /* --- Manutenção das outras seções (com ligeiros ajustes para compactar) --- */
     .section-padding {
-        padding: 50px 0 !important;
+        padding: 30px 0 !important; /* Reduzido padding das seções no mobile */
     }
 
     .about-grid, .practice-grid, .articles-grid, .contact-grid {
         display: flex !important;
         flex-direction: column !important;
         grid-template-columns: none !important;
-        gap: 30px !important;
+        gap: 20px !important; /* Reduzido gap no mobile */
     }
 
     .section-header h2, h2 {
-        font-size: 26px !important;
-        line-height: 1.3 !important;
+        font-size: 24px !important;
+        line-height: 1.2 !important;
         text-align: center !important;
     }
-    
+
     .section-header {
-        margin-bottom: 35px !important;
+        margin-bottom: 25px !important; /* Reduzido no mobile */
     }
 
     .practice-card, .article-card, .contact-form {
@@ -165,7 +188,7 @@
     }
 
     .contact-form {
-        padding: 25px 25px !important;
+        padding: 20px !important; /* Reduzido no mobile */
     }
 
     /* --- Caixa Modal --- */
