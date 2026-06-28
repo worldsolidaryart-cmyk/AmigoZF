@@ -131,6 +131,11 @@
         position: relative !important;
     }
 
+    /* Oculta o brilho de fundo no mobile para remover o espaço fantasma abaixo da foto */
+    .photo-glow {
+        display: none !important;
+    }
+
     .lawyer-photo {
         width: 100% !important;
         height: auto !important;
@@ -193,4 +198,3 @@
         display: none !important; 
     }
 }
-
