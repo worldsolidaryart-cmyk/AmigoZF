@@ -61,7 +61,7 @@
     .hero-grid {
         display: flex !important;
         flex-direction: column-reverse !important; /* Foto no topo, textos embaixo */
-        gap: 15px !important;
+        gap: -15px !important;
     }
 
     .hero-left {
