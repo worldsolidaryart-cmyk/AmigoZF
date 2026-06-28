@@ -46,11 +46,6 @@
 
     .header .btn-menu {
         visibility: hidden !important;
-        /*codigo abaixo é para aparecer o Agendar
-        width: 100% !important; 
-        max-width: 320px !important;
-        text-align: center !important;
-        box-sizing: border-box !important;*/
     }
 
     /* --- Seção Hero (Introdução) --- */
@@ -61,7 +56,7 @@
     .hero-grid {
         display: flex !important;
         flex-direction: column-reverse !important; /* Foto no topo, textos embaixo */
-        gap: 0px !important; /* 1. Mudado de 15px para 0px para eliminar o espaço do container */
+        gap: 0px !important; 
     }
 
     .hero-left {
@@ -71,10 +66,10 @@
 
     .hero-tag {
         display: inline-block !important;
-        margin: 0px auto 15px auto !important; /* 2. Forçado o 0px com !important para zerar a margem superior */
+        /* ALTERADO: -40px força o texto a subir e grudar na foto, eliminando o buraco vazio */
+        margin: -40px auto 15px auto !important; 
         white-space: nowrap !important;
     }
-
 
     #hero h1 {
         font-size: 26px !important; /* Tamanho ideal reduzido para telas de celular */
@@ -108,7 +103,7 @@
     /* Grid de Números Técnicos */
     .hero-numbers {
         display: grid !important;
-        grid-template-columns: 1fr !important; /* Um embaixo do outro */
+        grid-template-columns: 1fr !important; 
         gap: 15px !important;
         margin-top: 35px !important;
         background: rgba(255, 255, 255, 0.03) !important; 
@@ -126,12 +121,11 @@
 
     .photo-card {
         width: 100% !important;
-        max-width: 290px !important; /* Ajuste preciso com base na imagem do print */
+        max-width: 290px !important; 
         margin: 0 auto !important;
         position: relative !important;
     }
 
-    /* Oculta o brilho de fundo no mobile para remover o espaço fantasma abaixo da foto */
     .photo-glow {
         display: none !important;
     }
@@ -140,10 +134,10 @@
         width: 100% !important;
         height: auto !important;
         display: block !important;
-        border-radius: 24px !important; /* Preserva o corte arredondado elegante */
+        border-radius: 24px !important; 
     }
 
-    /* --- Novas Seções Adaptadas (AGORA DENTRO DO ESCOPO MOBILE) --- */
+    /* --- Novas Seções Adaptadas --- */
     .section-padding {
         padding: 50px 0 !important;
     }
