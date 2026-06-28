@@ -66,8 +66,8 @@
 
     .hero-tag {
         display: inline-block !important;
-        /* ALTERADO: -40px força o texto a subir e grudar na foto, eliminando o buraco vazio */
-        margin: -40px auto 15px auto !important; 
+        /* ALTERADO: Aumentado para -75px para puxar o texto ainda mais para cima e zerar de vez o buraco */
+        margin: -75px auto 15px auto !important; 
         white-space: nowrap !important;
     }
 
