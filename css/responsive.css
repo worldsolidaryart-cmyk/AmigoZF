@@ -61,7 +61,7 @@
     .hero-grid {
         display: flex !important;
         flex-direction: column-reverse !important; /* Foto no topo, textos embaixo */
-        gap: -15px !important;
+        gap: 0px !important; /* 1. Mudado de 15px para 0px para eliminar o espaço do container */
     }
 
     .hero-left {
@@ -71,9 +71,10 @@
 
     .hero-tag {
         display: inline-block !important;
-        margin: 0 auto 15px auto !important;
+        margin: 0px auto 15px auto !important; /* 2. Forçado o 0px com !important para zerar a margem superior */
         white-space: nowrap !important;
     }
+
 
     #hero h1 {
         font-size: 26px !important; /* Tamanho ideal reduzido para telas de celular */
