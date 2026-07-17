@@ -166,20 +166,17 @@
         box-sizing: border-box !important;
     }
 
-    /* BLINDAGEM COMPLETA DO FORMULÁRIO DE CONTATO */
-    .contact-grid form, 
-    .contact-form, 
-    form {
+    /* LIBERA A DIV MÃE E O FORMULÁRIO JUNTOS */
+    .contact-form-wrapper,
+    .contact-form {
         width: 100% !important;
         max-width: 100% !important;
         min-width: 100% !important;
         box-sizing: border-box !important;
-        display: block !important;
-        margin: 0 auto !important;
     }
 
     .contact-form {
-        padding: 25px 20px !important; /* Respiro interno para os campos não colarem nas bordas */
+        padding: 25px 25px !important;
     }
 
     /* --- Caixa Modal --- */
