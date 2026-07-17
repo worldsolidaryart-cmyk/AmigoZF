@@ -147,6 +147,8 @@
         flex-direction: column !important;
         grid-template-columns: none !important;
         gap: 30px !important;
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
     .section-header h2, h2 {
@@ -164,12 +166,20 @@
         box-sizing: border-box !important;
     }
 
-    .contact-form {
+    /* BLINDAGEM COMPLETA DO FORMULÁRIO DE CONTATO */
+    .contact-grid form, 
+    .contact-form, 
+    form {
         width: 100% !important;
         max-width: 100% !important;
         min-width: 100% !important;
         box-sizing: border-box !important;
-        padding: 25px 25px !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    .contact-form {
+        padding: 25px 20px !important; /* Respiro interno para os campos não colarem nas bordas */
     }
 
     /* --- Caixa Modal --- */
