@@ -8,10 +8,10 @@ color:#F8FAFC;
 font-family:'Inter', sans-serif;
 overflow-x: hidden;
 
-/* ADIÇÃO DAS LINHAS DOURADAS LATERAIS */
+/* ADIÇÃO DAS LINHAS DOURADAS LATERAIS
 border-left: 3px solid #C9A54D !important;
 border-right: 3px solid #C9A54D !important;
-box-sizing: border-box !important;
+box-sizing: border-box !important;*/
 }
 
 /* ... demais estilos css omitidos para brevidade ... */
