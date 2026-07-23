@@ -1,51 +1,29 @@
 class ArticleService {
 
-    static artigos = null;
+    static getTodos() {
 
-    static async carregar() {
-
-        if (this.artigos) return this.artigos;
-
-        const resposta = await fetch("data/articles.json");
-
-        this.artigos = await resposta.json();
-
-        return this.artigos;
+        return [...window.ARTICLES]
+            .filter(artigo => artigo.publicado)
+            .sort((a, b) => new Date(b.data) - new Date(a.data));
 
     }
 
-    static async getTodos() {
+    static getRecentes(qtd = 2) {
 
-        const artigos = await this.carregar();
-
-        return artigos
-            .filter(a => a.publicado)
-            .sort((a,b)=>new Date(b.data)-new Date(a.data));
+        return this.getTodos().slice(0, qtd);
 
     }
 
-    static async getRecentes(qtd=2){
+    static getPorId(id) {
 
-        const artigos = await this.getTodos();
-
-        return artigos.slice(0,qtd);
+        return this.getTodos().find(a => a.id === id);
 
     }
 
-    static async getPorId(id){
-
-        const artigos = await this.getTodos();
-
-        return artigos.find(a=>a.id===id);
-
-    }
-
-    static async getCategorias(){
-
-        const artigos = await this.getTodos();
+    static getCategorias() {
 
         return [...new Set(
-            artigos.map(a=>a.categoria)
+            this.getTodos().map(a => a.categoria)
         )].sort();
 
     }
