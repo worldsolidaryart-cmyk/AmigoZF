@@ -1,0 +1,314 @@
+/* ===========================
+   HERO
+=========================== */
+
+.page-hero{
+    padding:140px 0 70px;
+    background:linear-gradient(180deg,#0f172a 0%,#111827 100%);
+    color:#fff;
+    text-align:center;
+}
+
+.page-hero h1{
+    margin-top:18px;
+    font-size:clamp(2.2rem,5vw,3.8rem);
+}
+
+.page-hero p{
+    max-width:760px;
+    margin:25px auto 0;
+    line-height:1.8;
+    color:#d1d5db;
+}
+
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.publicacoes-content{
+
+    padding:70px 0;
+
+}
+
+.publicacoes-content .container{
+
+    display:grid;
+
+    grid-template-columns:340px 1fr;
+
+    gap:50px;
+
+    align-items:start;
+
+}
+
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.articles-sidebar{
+
+    position:sticky;
+
+    top:120px;
+
+    background:#fff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.05);
+
+}
+
+
+.sidebar-search{
+
+    padding:20px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+.sidebar-search input{
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    border:1px solid #d1d5db;
+
+    font-size:.95rem;
+
+    transition:.3s;
+
+}
+
+.sidebar-search input:focus{
+
+    outline:none;
+
+    border-color:var(--gold);
+
+}
+
+
+/* ===========================
+   LISTA
+=========================== */
+
+#articles-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.article-item{
+
+    width:100%;
+
+    padding:18px 20px;
+
+    background:none;
+
+    border:none;
+
+    border-bottom:1px solid #f1f1f1;
+
+    cursor:pointer;
+
+    text-align:left;
+
+    transition:.25s;
+
+}
+
+
+.article-item:hover{
+
+    background:#f8fafc;
+
+}
+
+
+.article-item.active{
+
+    background:#0f172a;
+
+    color:#fff;
+
+}
+
+
+.article-item .categoria{
+
+    display:block;
+
+    font-size:.72rem;
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    margin-bottom:6px;
+
+}
+
+
+.article-item strong{
+
+    display:block;
+
+    line-height:1.5;
+
+}
+
+
+/* ===========================
+   ARTIGO
+=========================== */
+
+#article-view{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:50px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.06);
+
+}
+
+
+#article-view h1{
+
+    margin:15px 0 25px;
+
+    font-size:2.4rem;
+
+    line-height:1.2;
+
+}
+
+
+#article-view h2{
+
+    margin:45px 0 15px;
+
+    font-size:1.45rem;
+
+}
+
+
+.article-meta{
+
+    color:#6b7280;
+
+    margin-bottom:35px;
+
+    font-size:.92rem;
+
+}
+
+
+.article-image{
+
+    width:100%;
+
+    border-radius:18px;
+
+    margin-bottom:35px;
+
+}
+
+
+#article-content p{
+
+    margin-bottom:22px;
+
+    line-height:1.9;
+
+    color:#374151;
+
+    font-size:1.05rem;
+
+}
+
+
+#article-content ul{
+
+    padding-left:24px;
+
+    margin:25px 0;
+
+}
+
+
+#article-content li{
+
+    margin-bottom:12px;
+
+    line-height:1.7;
+
+}
+
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:1100px){
+
+.publicacoes-content .container{
+
+grid-template-columns:1fr;
+
+}
+
+.articles-sidebar{
+
+position:relative;
+
+top:auto;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.page-hero{
+
+padding:120px 0 50px;
+
+}
+
+#article-view{
+
+padding:30px;
+
+}
+
+#article-view h1{
+
+font-size:2rem;
+
+}
+
+}
