@@ -1,6 +1,6 @@
-/* ===========================
+/* =========================================================
    HERO
-=========================== */
+========================================================= */
 
 .page-hero{
     padding:140px 0 70px;
@@ -10,6 +10,7 @@
 }
 
 .page-hero h1{
+    color:#fff;
     margin-top:18px;
     font-size:clamp(2.2rem,5vw,3.8rem);
 }
@@ -17,65 +18,59 @@
 .page-hero p{
     max-width:760px;
     margin:25px auto 0;
-    line-height:1.8;
     color:#d1d5db;
+    line-height:1.8;
 }
 
 
-/* ===========================
+/* =========================================================
    LAYOUT
-=========================== */
+========================================================= */
 
 .publicacoes-content{
 
     padding:70px 0;
+    background:#f8fafc;
 
 }
 
 .publicacoes-content .container{
 
     display:grid;
-
     grid-template-columns:340px 1fr;
-
     gap:50px;
-
     align-items:start;
 
 }
 
 
-/* ===========================
+/* =========================================================
    SIDEBAR
-=========================== */
+========================================================= */
 
 .articles-sidebar{
 
     position:sticky;
-
-    top:120px;
+    top:110px;
 
     background:#fff;
-
-    border:1px solid #e5e7eb;
 
     border-radius:18px;
 
     overflow:hidden;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.05);
+    border:1px solid #e5e7eb;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
 
 }
-
 
 .sidebar-search{
 
     padding:20px;
-
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #ececec;
 
 }
-
 
 .sidebar-search input{
 
@@ -87,7 +82,7 @@
 
     border:1px solid #d1d5db;
 
-    font-size:.95rem;
+    font-size:15px;
 
     transition:.3s;
 
@@ -97,14 +92,14 @@
 
     outline:none;
 
-    border-color:var(--gold);
+    border-color:#bfa15a;
 
 }
 
 
-/* ===========================
+/* =========================================================
    LISTA
-=========================== */
+========================================================= */
 
 #articles-list{
 
@@ -114,18 +109,17 @@
 
 }
 
-
 .article-item{
 
     width:100%;
-
-    padding:18px 20px;
 
     background:none;
 
     border:none;
 
-    border-bottom:1px solid #f1f1f1;
+    border-bottom:1px solid #f2f2f2;
+
+    padding:18px 22px;
 
     cursor:pointer;
 
@@ -135,13 +129,11 @@
 
 }
 
-
 .article-item:hover{
 
-    background:#f8fafc;
+    background:#f7f7f7;
 
 }
-
 
 .article-item.active{
 
@@ -151,69 +143,102 @@
 
 }
 
+.article-item.active strong{
+
+    color:#fff;
+
+}
 
 .article-item .categoria{
 
     display:block;
 
-    font-size:.72rem;
-
-    color:var(--gold);
+    color:#bfa15a;
 
     text-transform:uppercase;
 
+    font-size:.72rem;
+
+    margin-bottom:8px;
+
     letter-spacing:1px;
 
-    margin-bottom:6px;
-
 }
-
 
 .article-item strong{
 
     display:block;
+
+    color:#0f172a;
+
+    font-size:16px;
 
     line-height:1.5;
 
 }
 
 
-/* ===========================
+/* =========================================================
    ARTIGO
-=========================== */
+========================================================= */
 
 #article-view{
 
     background:#fff;
 
-    border-radius:22px;
+    border-radius:24px;
 
-    padding:50px;
+    padding:55px;
 
-    box-shadow:0 20px 45px rgba(0,0,0,.06);
+    box-shadow:0 20px 45px rgba(0,0,0,.05);
 
 }
 
+#article-view>.categoria{
+
+    display:inline-block;
+
+    background:#0f172a;
+
+    color:#fff;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
 
 #article-view h1{
 
-    margin:15px 0 25px;
+    color:#0f172a !important;
 
-    font-size:2.4rem;
+    font-size:2.5rem;
+
+    margin:20px 0;
 
     line-height:1.2;
 
-}
+    font-weight:700;
 
+}
 
 #article-view h2{
 
-    margin:45px 0 15px;
+    color:#0f172a !important;
 
-    font-size:1.45rem;
+    font-size:1.55rem;
+
+    margin:45px 0 18px;
+
+    font-weight:600;
 
 }
-
 
 .article-meta{
 
@@ -221,10 +246,7 @@
 
     margin-bottom:35px;
 
-    font-size:.92rem;
-
 }
-
 
 .article-image{
 
@@ -234,81 +256,107 @@
 
     margin-bottom:35px;
 
+    display:block;
+
 }
 
-
-#article-content p{
-
-    margin-bottom:22px;
-
-    line-height:1.9;
+#article-content{
 
     color:#374151;
 
-    font-size:1.05rem;
-
 }
 
+#article-content p{
+
+    color:#374151;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:24px;
+
+}
 
 #article-content ul{
 
-    padding-left:24px;
-
     margin:25px 0;
 
-}
+    padding-left:22px;
 
+}
 
 #article-content li{
 
     margin-bottom:12px;
 
-    line-height:1.7;
+    line-height:1.8;
+
+    color:#374151;
+
+}
+
+#article-content strong{
+
+    color:#0f172a;
+
+}
+
+#article-content a{
+
+    color:#0f172a;
+
+    text-decoration:none;
+
+}
+
+#article-content a:hover{
+
+    text-decoration:underline;
 
 }
 
 
-/* ===========================
+/* =========================================================
    RESPONSIVO
-=========================== */
+========================================================= */
 
-@media(max-width:1100px){
+@media (max-width:1100px){
 
-.publicacoes-content .container{
+    .publicacoes-content .container{
 
-grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-}
+    }
 
-.articles-sidebar{
+    .articles-sidebar{
 
-position:relative;
+        position:relative;
 
-top:auto;
+        top:auto;
 
-}
-
-}
-
-
-@media(max-width:768px){
-
-.page-hero{
-
-padding:120px 0 50px;
+    }
 
 }
 
-#article-view{
+@media (max-width:768px){
 
-padding:30px;
+    .page-hero{
 
-}
+        padding:120px 0 50px;
 
-#article-view h1{
+    }
 
-font-size:2rem;
+    #article-view{
 
-}
+        padding:30px;
+
+    }
+
+    #article-view h1{
+
+        font-size:2rem;
+
+    }
 
 }
