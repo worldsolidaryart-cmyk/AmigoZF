@@ -1,8 +1,7 @@
 backend:
-  name: github
+  name: git-gateway
   repo: worldsolidaryart-cmyk/AmigoZF
-  branch: main
-  site_url: https://advzf.netlify.app
+  branch: main  
 
 media_folder: "assets/images/artigos"
 public_folder: "assets/images/artigos"
