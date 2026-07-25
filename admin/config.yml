@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: worldsolidaryart-cmyk/AmigoZF
+  branch: main
+
+media_folder: "assets/images/artigos"
+public_folder: "assets/images/artigos"
+
+collections:
+  - name: "articles"
+    label: "Artigos Jurídicos"
+    folder: "content/articles"
+    create: true
+    slug: "{{fields.id}}"
+    fields:
+      - { label: "ID / Slug (ex: home-office)", name: "id", widget: "string" }
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Categoria", name: "categoria", widget: "select", options: ["Direito Criminal", "Direito Trabalhista", "Direito Civil", "Geral"] }
+      - { label: "Autor", name: "autor", widget: "string", default: "Amigo Z. F." }
+      - { label: "Data (AAAA-MM-DD)", name: "data", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Imagem de Capa", name: "imagem", widget: "image", required: false }
+      - { label: "Resumo", name: "resumo", widget: "text" }
+      - { label: "Tempo de Leitura (ex: 5 min)", name: "tempoLeitura", widget: "string", default: "5 min" }
+      - { label: "Artigo em Destaque?", name: "destaque", widget: "boolean", default: false }
+      - { label: "Publicado?", name: "publicado", widget: "boolean", default: true }
+      - { label: "Conteúdo do Artigo", name: "body", widget: "markdown" }
